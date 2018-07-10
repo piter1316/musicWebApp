@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- Loads static files -->
+{% load staticfiles %}
+
+<link rel="stylesheet" href="{% static 'music/style.css' %}" type="text/css" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<nav class="navbar navbar-default bg-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand text-white" href="{% url 'music:index'%}"> Piter </a>
+        </div>
+    </div>
+</nav>
 
 {% if all_albums %}
     <h3>All Albums: </h3>
@@ -16,6 +22,3 @@
 {% else %}
     <h3> You don't have any albums</h3>
 {% endif %}
-
-</body>
-</html>
