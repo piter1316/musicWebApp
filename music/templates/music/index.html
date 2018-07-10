@@ -3,11 +3,35 @@
 
 <link rel="stylesheet" href="{% static 'music/style.css' %}" type="text/css" />
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-<nav class="navbar navbar-default bg-dark">
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-md">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand text-white" href="{% url 'music:index'%}"> Piter </a>
+            <a class="navbar-brand" href="{% url 'music:index'%}"> Piter </a>
+        </div>
+        <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#topNavBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a class="nav-item nav-link" href="{% url 'music:index'%}">
+                        <span class="fas fa-compact-disc"  aria-hidden="true"></span>&nbsp; Albums
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="nav-item nav-link" href="{% url 'music:index'%}">
+                        <span class="fab fa-itunes-note"  aria-hidden="true"></span>&nbsp; Songs
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
