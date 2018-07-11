@@ -1,5 +1,5 @@
 body{
-	background:  url('images/background.jpg');
+	background: blue url('images/background.jpg');
 }
 .navbar-brand{
     font-family: 'Satisfy', cursive;

@@ -2,11 +2,14 @@
 
 {% block body %}
 
-    <h3>All Albums: </h3>
-    <ul>
-        {% for album in all_albums %}
-            <li><a href="{% url 'music:detail' album.id %}"> {{ album.album_title }} </a></li>
-        {% endfor %}
-    </ul>
+    <div class="container mt-5">
+        <h3>All Albums: </h3>
+        <ul>
+            {% for album in all_albums %}
+                <li><a href="{% url 'music:detail' album.id %}"> {{ album.album_title }} </a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
 
 {% endblock %}
