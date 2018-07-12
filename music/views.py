@@ -1,5 +1,6 @@
 from django.views import generic
 from django.views.generic import CreateView, UpdateView,DetailView
+
 from .models import Album
 
 
