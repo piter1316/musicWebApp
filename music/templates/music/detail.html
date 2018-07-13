@@ -14,8 +14,8 @@
                             <h3 class="">{{ album.artist }}</h3>
                             <h5>{{ album.genre }}</h5>
                         </div>
-                        <button class="btn btn-default m-2" ><i class="fas fa-trash-alt"></i></button>
-                        <button class="btn btn-warning m-2" ><i class="fas fa-star"></i></button>
+                        {% include 'music/delete-favourite-buttons.html' %}
+
                     </div>
                 </div>
             </div>
