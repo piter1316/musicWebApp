@@ -9,8 +9,10 @@
                     <h1> {{ album.album_title }} </h1>
                     <h2>{{ album.artist }}</h2>
                     <h5>{{ album.genre }}</h5>
-                    <button class="btn btn-info m-2" ><a href="{% url 'music:detail' album.id %}" style="text-decoration: none;color: white;">View details</a></button>
-                    {% include 'music/delete-favourite-buttons.html' %}
+                    <button class="btn btn-info m-1" ><a href="{% url 'music:detail' album.id %}" style="text-decoration: none;color: white;">Details</a></button>
+                    {% include 'music/delete-favourite-edit-buttons.html' %}
+
+
                 </div>
             </div>
         {% endfor %}
